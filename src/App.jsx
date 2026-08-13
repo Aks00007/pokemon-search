@@ -34,7 +34,7 @@ const App = () => {
       <div>
         <h1>Pokemon Search</h1>
         <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Enter Here" />
-        <button onClick={getPokemon} className="ml-1">Search</button>
+        <button onClick={getPokemon}>Search</button>
         {loading && <p>Loading...</p>}
         {error && <p>{error}</p>}
         {!error && pokemon.name && <p>{`Pokemon's name is ${pokemon.name}`}</p>}
